@@ -127,7 +127,7 @@ if (loadingCategories || (loadingCourses && !selectedCategory) || loadingFiltere
         setLoadingFilteredCourses(true);
 
         // Fetch courses by selected category
-        fetch(`http://localhost:5000/api/get_course_by_category/${encodeURIComponent(cat)}`)
+        fetch(`https://winacademy-backend.onrender.com/api/get_course_by_category/${encodeURIComponent(cat)}`)
           .then(res => res.json())
           .then(data => {
             setCourses(data ?? []);
