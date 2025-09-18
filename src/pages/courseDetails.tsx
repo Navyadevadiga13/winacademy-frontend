@@ -36,7 +36,7 @@ const closePopup = () => setShowPopup(false);
       return;
     }
     
-    fetch(`http://localhost:5000/api/get_course_by_id/${id}`)
+    fetch(`https://winacademy-backend.onrender.com/api/get_course_by_id/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to fetch course details (${res.status})`);
         return res.json();
