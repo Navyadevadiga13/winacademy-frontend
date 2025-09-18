@@ -29,7 +29,7 @@ export default function Courses() {
 
   
   useEffect(() => {
-    fetch("http://localhost:5000/api/get_courses")
+    fetch("https://winacademy-backend.onrender.com/api/get_courses")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data ?? []);
@@ -37,7 +37,7 @@ export default function Courses() {
       })
       .catch(() => setLoadingCourses(false));
 
-    fetch("http://localhost:5000/api/course_categories")
+    fetch("https://winacademy-backend.onrender.com/api/course_categories")
       .then((res) => res.json())
       .then((data) => {
         setCategories(data ?? []);
@@ -98,7 +98,7 @@ if (loadingCategories || (loadingCourses && !selectedCategory) || loadingFiltere
     setSelectedCategory(null);   // Clear selected category
     setLoadingCourses(true);
     // Fetch all courses
-    fetch("http://localhost:5000/api/get_courses")
+    fetch("https://winacademy-backend.onrender.com/api/get_courses")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data ?? []);

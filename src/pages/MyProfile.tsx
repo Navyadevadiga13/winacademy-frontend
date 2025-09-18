@@ -26,7 +26,7 @@ export default function MyProfile() {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/api/myprofile", {
+        const res = await fetch("https://winacademy-backend.onrender.com/api/myprofile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
