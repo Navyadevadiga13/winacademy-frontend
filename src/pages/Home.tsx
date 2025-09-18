@@ -1,6 +1,5 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProfessionImage from '../assets/profession.png';
+import ProfessionImage from '../assets/Profession.png';
 import CPD from '../assets/CPD.png';
 import girl from '../assets/girl (2).png';
 import skill_india from '../assets/skill_india.jpg';
