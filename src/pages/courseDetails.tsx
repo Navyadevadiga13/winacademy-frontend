@@ -466,35 +466,5 @@ for (let i = 0; i < course.course_curriculum.length; i += 2) {
   );
 }
 
-function CurriculumAccordion({ modules }: { modules: { title: string; content: string }[] }) {
-  return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-      {modules.map(({ title, content }, idx) => (
-        <div
-          key={idx}
-          style={{
-            paddingLeft: 18,
-            borderLeft: "4px solid #1972d7",
-            color: "#1851c2",
-            fontWeight: "bold",
-            fontSize: "1.1rem",
-          }}
-        >
-          <div>{title}</div>
-          <div
-            style={{
-              fontWeight: "normal",
-              color: "#000",
-              marginTop: 8,
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            {content}
-          </div>
-        </div>
-      ))}
-    </div>
-    
-  );
-}
+
 

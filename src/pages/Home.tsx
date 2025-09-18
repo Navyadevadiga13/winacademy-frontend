@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProfessionImage from '../assets/profession.png';
 import CPD from '../assets/CPD.png';
@@ -329,9 +328,7 @@ function Home() {
                           ₹{course.discounted_price}
                         </span>
                       </p>
-                      <small className="text-muted text-center" style={{ fontSize: '0.75rem' }}>
-                        {course.description}
-                      </small>
+                
                     </div>
                   </div>
                 </div>
