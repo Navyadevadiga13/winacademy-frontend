@@ -8,7 +8,7 @@ import CourseDetails from './pages/courseDetails';
 import Footer from './components/Footer';
 import Login from './pages/login';
 import MyProfile from './pages/MyProfile';
-import Privacy from './pages/Privacy';
+import Privacy from './pages/privacy';
 
 function AppContent() {
   const location = useLocation();
