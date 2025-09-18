@@ -34,9 +34,10 @@ useEffect(() => {
 const handleLogout = () => {
   localStorage.removeItem("token");
   setIsLoggedIn(false);
-  navigate("/login");
+  navigate("/");  // ✅ Correct - this matches your route
   window.location.reload();
 };
+
 
 
   return (
