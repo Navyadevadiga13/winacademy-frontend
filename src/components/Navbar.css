@@ -1,0 +1,19 @@
+.main-navbar {
+  width: 100vw;
+  min-width: 100vw;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  left: 0;
+  top: 0;
+  /* ❌ REMOVE display:flex / align-items / justify-content here */
+  /* Let Bootstrap handle layout */
+}
+
+.navbar-right-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap; /* prevents wrapping to next line */
+}

@@ -1,0 +1,160 @@
+.home-page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+body {
+  padding-top: 70px;  /* Adjust if your navbar height changes */
+  box-sizing: border-box;
+}
+
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef6fa;
+  border-radius: 18px;
+  margin: 40px 38px;
+  padding: 50px;
+  min-height: 340px;
+}
+
+.hero-left {
+  max-width: 440px;
+}
+
+.hero-left h1 {
+  font-size: 2.6em;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.hero-left p {
+  font-size: 1.15em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.search-bar button {
+  background: #ffffff;         /* updated accent color */
+  color: white;
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.accred-logos {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.accred-placeholder {
+  height: 38px;
+  min-width: 100px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98em;
+  color: #18A49A;              /* updated accent color */
+}
+
+.hero-right .hero-image-placeholder {
+  max-width: 340px;
+  min-width: 200px;
+  min-height: 220px;
+  background: #fafafd;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #18A49A;              /* updated accent color */
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+/* MOBILE RESPONSIVE: Add this for mobile friendliness */
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    padding: 28px 12px;
+    margin: 18px 5px;
+    min-height: unset;
+    gap: 0;
+  }
+  .hero-left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .hero-right .hero-image-placeholder {
+    min-width: unset;
+    width: 85vw;
+    min-height: 140px;
+    font-size: 1em;
+  }
+  .search-bar, .accred-logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .accred-logos {
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    padding: 12px 2vw;
+    margin: 7px 0;
+    border-radius: 10px;
+  }
+  .hero-left h1 {
+    font-size: 1.45em;
+  }
+  .hero-left p {
+    font-size: 1em;
+  }
+  .search-bar button,
+  .search-bar input {
+    font-size: 0.96em;
+    padding: 7px 12px;
+  }
+  .accred-placeholder {
+    min-width: 60vw;
+    font-size: 0.85em;
+    padding: 5px 5px;
+  }
+  .hero-right .hero-image-placeholder {
+    font-size: 0.95em;
+    padding: 10px 0;
+    min-width: 72vw;
+    min-height: 90px;
+  }
+}
